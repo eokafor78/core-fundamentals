@@ -99,11 +99,7 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        String reversed = "";
-        for (int i = stringToReverse.length()-1; i >= 0; i--){
-            reversed += stringToReverse.charAt(i);
-        }
-        return reversed;
+        return new StringBuffer(stringToReverse).reverse().toString();
     }
 }
 
